@@ -169,3 +169,45 @@ body {
 .gallery__link:hover::after{
     opacity: 100%;
 }
+
+/* ABOUT */
+
+.about__title{
+    max-width: 400px;
+    margin-bottom: 40px;
+    letter-spacing: -0.04em;
+}
+.about__inner{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 65px;
+}
+.about__wrapper{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-right: 30px;
+}
+.about__item{
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 48px;
+}
+.about__item:last-of-type{
+    margin-bottom: 0;
+}
+.about__img-box{
+    margin-right: 40px;
+}
+.about__item-info{
+    max-width: 305px;
+}
+.about__item-subtitle{
+    font-size: 16px;
+    margin-bottom: 8px;
+}
+.about__btn{
+    margin-top: 72px;
+}
