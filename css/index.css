@@ -1,5 +1,6 @@
 @font-face {
     font-family: "NewYorkExtraLarge";
+    font-weight: 600;
     src: url("../fonts/NewYorkExtraLargeBold.otf") format("woff2");
 }
 
@@ -40,18 +41,33 @@ body {
     min-width: 360px;
 }
 .btn{
+    height: 56px;
+    padding: 8px 32px;
     background-color: #FD665E;
     border-radius: 4px;
     font-size: 14px;
     line-height: 40px;
     color: #FFFFFF;
     font-family: "SFUIDisplaySemiBold";
+    letter-spacing: 0.01em;
 }
-.wrapper{
+.container{
     max-width: 1110px;
     margin: 0 auto;
 }
-
+.title{
+    font-family: "NewYorkExtraLarge";
+    font-size: 48px;
+    line-height: 124%;
+    color: #000000;
+}
+.text{
+    font-family: "SFUIDisplayRegular";
+    color: #000000;
+    font-size: 16px;
+    line-height: 160%;
+    color: #000000;
+}
 
 /* HEADER */
 .header__container{
@@ -88,4 +104,68 @@ body {
 }
 .header__btn--sign-in{
     margin-right: 16px;
+}
+.header__btn--sign-up{
+    height: 48px;
+}
+
+/* MAIN */
+
+.main__title{
+    font-size: 112px;
+    max-width: 870px;
+    line-height: 100%;
+    margin-bottom: 45px;
+    padding-top: 48px;
+}
+.main__title span{
+    color: #FD665E;
+}
+.main__inner{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 47px;
+    margin-bottom: 112px;
+}
+.main__text{
+    padding-top: 10px;
+    max-width: 284px;
+}
+.main__btn{
+    margin-top: 48px;
+}
+
+/* GALLERY */
+.gallery__title{
+    margin: 0 auto;
+    text-align: center;
+    max-width: 535px;
+}
+.gallery__inner{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 340px);
+    justify-content: center;
+    gap: 45px;
+    margin-top: 40px;
+    padding-bottom: 128px;
+}
+.gallery__link{
+    position: relative;
+}
+.gallery__link::after{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(30, 30, 30, 0.4);
+    background-image: url(../assets/img/searhc.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    transition: all .3s ease;
+    opacity: 0%;
+}
+.gallery__link:hover::after{
+    opacity: 100%;
 }
