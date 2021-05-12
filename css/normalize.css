@@ -82,6 +82,7 @@ pre {
 
 a {
   background-color: transparent;
+  text-decoration: none;
 }
 
 /**
@@ -174,6 +175,8 @@ textarea {
   line-height: 1.15; /* 1 */
   margin: 0; /* 2 */
   border: none;
+  background-color: transparent;
+  cursor: pointer;
 }
 
 /**

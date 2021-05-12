@@ -1,0 +1,91 @@
+@font-face {
+    font-family: "NewYorkExtraLarge";
+    src: url("../fonts/NewYorkExtraLargeBold.otf") format("woff2");
+}
+
+@font-face {
+    font-family: "SFUIDisplayLight";
+    font-style: normal;
+    font-weight: 300;
+    src: url("../fonts/SFUIDisplay-Light.woff") format("woff2");
+}
+
+@font-face {
+    font-family: "SFUIDisplayRegular";
+    font-style: normal;
+    font-weight: 400;
+    src: url("../fonts/SFUIDisplay-Regular.woff") format("woff2");
+}
+
+@font-face {
+    font-family: "SFUIDisplaySemiBold";
+    font-style: normal;
+    font-weight: 600;
+    src: url("../fonts/SFUIDisplay-Semibold.woff") format("woff2");
+}
+
+@font-face {
+    font-family: "SFUIDisplayBold";
+    font-style: normal;
+    font-weight: 700;
+    src: url("../fonts/SFUIDisplay-Bold.woff") format("woff2");
+}
+
+ul{
+    list-style: none;
+}
+body {
+    font-family: "SFUIDisplayRegular";
+    color: #000000;
+    min-width: 360px;
+}
+.btn{
+    background-color: #FD665E;
+    border-radius: 4px;
+    font-size: 14px;
+    line-height: 40px;
+    color: #FFFFFF;
+    font-family: "SFUIDisplaySemiBold";
+}
+.wrapper{
+    max-width: 1110px;
+    margin: 0 auto;
+}
+
+
+/* HEADER */
+.header__container{
+    min-height: 96px;
+    padding: 0 50px;
+    justify-content: space-between;
+}
+.header__container,
+.header__navigation,
+.nav__list,
+.header__autorization{
+    display: flex;
+    align-items: center;
+}
+.header__logo{
+    margin-right: 60px;
+}
+.nav__item{
+    padding: 4px 24px;
+}
+.nav__link,
+.header__btn--sign-in{
+    font-size: 14px;
+    line-height: 40px;
+    color: #585858;
+}
+.header__btn--search{
+    display: flex;
+    align-items: center;
+    margin-right: 26px;
+}
+.header__btn{
+    padding: 4px 24px;
+}
+.header__btn--sign-in{
+    margin-right: 16px;
+}
