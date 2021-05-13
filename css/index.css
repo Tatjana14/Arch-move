@@ -327,3 +327,16 @@ body {
     align-items: center;
     padding-bottom: 105px;
 }
+
+/* FOOTER */
+
+.footer__inner{
+    min-height: 208px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.footer__list{
+    display: flex;
+    align-items: center;
+}
