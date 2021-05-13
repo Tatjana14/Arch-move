@@ -211,3 +211,83 @@ body {
 .about__btn{
     margin-top: 72px;
 }
+
+/* FEEDBACK */
+
+.feedback__wrapper{
+    background: linear-gradient(180deg, #F9F9F9 22.12%, rgba(249, 249, 249, 0) 100%);
+}
+.feedback__container{
+    padding-top: 65px;
+    padding-bottom: 75px;
+}
+.feedback__title{
+    margin-bottom: 40px;
+    max-width: 390px;
+}
+.feedback__inner{
+    position: relative;
+}
+.feedback__inner::after{
+    content: "";
+    position: absolute;
+    width: 58px;
+    height: 41px;
+    background-image: url(../assets/img/psevdo.png);
+    top: 0%;
+    left: 20%;
+    z-index: 20;
+}
+.slider__item{
+    display: flex;
+    justify-content: flex-end;
+}
+.slider__text{
+    max-width: 755px;
+    font-family: "SFUIDisplayLight";
+    font-size: 32px;
+    line-height: 160%;
+    color: #000000;
+    margin-bottom: 60px;
+}
+.slider__text-autor{
+    font-family:"SFUIDisplayRegular" ;
+    font-style: normal;
+    font-size: 16px;
+    line-height: 160%;
+    color: #000000;
+}
+.slider__text-autor-bold{
+    font-family: "SFUIDisplayBold";
+    font-weight: 700;
+    font-style: normal;
+    font-size: 16px;
+    line-height: 160%;
+    color: #000000;
+}
+.swiper-button-prev,
+.swiper-button-next{
+    width: 48px;
+    height: 48px;
+    background: rgba(0, 0, 0, 0.03);
+    border-radius: 4px;
+}
+.swiper-button-prev,.swiper-button-next{
+    top: 90%;
+}
+.swiper-button-prev{
+    left: 80%;
+}
+.swiper-button-next{
+    right: 10%;
+}
+.swiper-button-prev::after,
+.swiper-button-next::after{
+    color: #FD665E;
+    font-size: 14px;
+}
+.swiper-button-next.swiper-button-disabled, 
+.swiper-button-prev.swiper-button-disabled{
+    background:transparent;
+    opacity: 1;
+}
