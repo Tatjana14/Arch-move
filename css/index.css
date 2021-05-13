@@ -291,3 +291,39 @@ body {
     background:transparent;
     opacity: 1;
 }
+
+/* PROJECT */
+.project{
+    background: linear-gradient(180deg, #F9F9F9 22.12%, rgba(249, 249, 249, 0) 100%);
+}
+.project__container{
+    display: flex;
+    justify-content: flex-end;
+    background-image: url(../assets/img/bg.png);
+    background-repeat: no-repeat;
+    background-position: -45px center;
+}
+.project__inner{
+    padding-top: 300px;
+    padding-bottom: 273px;
+}
+.project__title {
+    margin-bottom: 65px;
+    max-width: 535px;
+}
+.project__title span {
+    color: #FD665E;
+}
+
+/* PARTNERS */
+
+.partners__title{
+    padding-top: 65px;
+    margin-bottom: 56px;
+}
+.partners__inner{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 105px;
+}
