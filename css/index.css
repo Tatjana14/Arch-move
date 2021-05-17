@@ -74,6 +74,22 @@ body {
     min-height: 96px;
     padding: 0 50px;
     justify-content: space-between;
+    position: relative;
+}
+.header__open-img{
+    width: 50px;
+    height: 10px;
+    background-color: black;
+}
+.header__open-btn{
+    position: absolute;
+    cursor: pointer;
+    display: none;
+    top: 15%;
+    right: 5%;
+    width: 60px;
+    height: 60px;
+    background-image: url('../assets/img/burgerIcon.png');
 }
 .header__container,
 .header__navigation,
@@ -81,6 +97,11 @@ body {
 .header__autorization{
     display: flex;
     align-items: center;
+}
+.header__navigation{
+    width: 100%;
+    justify-content: space-between;
+    position: relative;
 }
 .header__logo{
     margin-right: 60px;
@@ -107,6 +128,9 @@ body {
 }
 .header__btn--sign-up{
     height: 48px;
+}
+.header__close-btn{
+    position: absolute;
 }
 
 /* MAIN */
@@ -339,4 +363,41 @@ body {
 .footer__list{
     display: flex;
     align-items: center;
+}
+
+/* MEDIAQUERIES */
+
+@media screen and (max-width: 1030px){
+    .header__container{
+        padding: 0;
+    }
+    .header__open-btn{
+        display: block;
+    }
+    .header__navigation{
+        position: fixed;
+        top: -100%;
+        flex-direction: column;
+        background-color: #ffaaa5;
+        width: 100vw;
+        z-index: 9999;
+        transition: all 0.5s ease;
+        -webkit-transition: all 0.5s ease;
+        -moz-transition: all 0.5s ease;
+        -ms-transition: all 0.5s ease;
+        -o-transition: all 0.5s ease;
+}
+    .header__navigation-active{
+        top: 0;
+    }
+    .header__close-btn{
+        cursor: pointer;
+        top: 15%;
+        right: 5%;
+        width: 20px;
+        height: 20px;
+        background: url('../assets/img/cancel.png') no-repeat;
+        background-size: cover;
+    }
+    
 }

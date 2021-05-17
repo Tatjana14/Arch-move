@@ -41,3 +41,17 @@ new Swiper('.swiper-container', {
     }, */
     speed: 500
 });
+
+let burger_Menu = document.querySelector('.header__navigation')
+
+function burgerMenu(){
+    let burger_Icon = document.getElementById('open-btn')
+    let close_Icon = document.getElementById('close-btn')
+    burger_Icon.addEventListener('click', toggleBurgerMenu)
+    close_Icon.addEventListener('click', toggleBurgerMenu)
+}
+
+function toggleBurgerMenu(){
+    burger_Menu.classList.toggle('header__navigation-active')
+}
+burgerMenu()
