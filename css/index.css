@@ -102,6 +102,11 @@ body {
     width: 100%;
     justify-content: space-between;
     position: relative;
+    transition: all ease 0.5s ;
+    -webkit-transition: all ease 0.5s ;
+    -moz-transition: all ease 0.5s ;
+    -ms-transition: all ease 0.5s ;
+    -o-transition: all ease 0.5s ;
 }
 .header__logo{
     margin-right: 60px;
@@ -367,6 +372,21 @@ body {
 
 /* MEDIAQUERIES */
 
+@media screen and (max-width: 768px){
+    .text{
+        font-size: 18px;
+    }
+    .title{
+        font-size: 45px;
+    }
+    .about__item-subtitle{
+        font-size: 16px;
+    }
+}
+@media screen and (max-width: 840px){
+    
+}
+
 @media screen and (max-width: 1030px){
     .header__container{
         padding: 0;
@@ -381,15 +401,15 @@ body {
         background-color: #ffaaa5;
         width: 100vw;
         z-index: 9999;
-        transition: all 0.5s ease;
-        -webkit-transition: all 0.5s ease;
-        -moz-transition: all 0.5s ease;
-        -ms-transition: all 0.5s ease;
-        -o-transition: all 0.5s ease;
+        transition: top ease 0.5s ;
+        -webkit-transition: top ease 0.5s ;
+        -moz-transition: top ease 0.5s ;
+        -ms-transition: top ease 0.5s ;
+        -o-transition: top ease 0.5s ;
 }
     .header__navigation-active{
         top: 0;
-    }
+}
     .header__close-btn{
         cursor: pointer;
         top: 15%;
@@ -399,5 +419,41 @@ body {
         background: url('../assets/img/cancel.png') no-repeat;
         background-size: cover;
     }
-    
+}
+@media screen and (max-width: 1160px){
+    .main__inner,
+    .about__inner,
+    .feedback__inner{
+        padding: 0 20px;
+    }
+    .main__text{
+        margin-top: 20px;
+    }
+    .feedback__inner::after{
+        display: none;
+    }
+}
+@media screen and (max-width: 1030px){
+    .main__title{
+        font-size: 70px;
+    }
+    .about__title,
+    .main__title,
+    .feedback__title{
+        padding-left: 20px;
+    }
+    .feedback__title{
+        max-width: 500px;
+    }
+    .main__inner{
+        flex-direction: column-reverse;
+    }
+    .about__inner{
+        flex-direction: column;
+    }
+    .about__wrapper{
+        margin-top: 30px;
+        padding-right: 0;
+        padding-bottom: 30px;
+    }
 }
