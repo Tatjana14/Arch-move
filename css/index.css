@@ -372,7 +372,9 @@ body {
 }
 
 /* FOOTER */
-
+.footer{
+    border-top:  1px solid #F0F0F0;
+}
 .footer__inner{
     min-height: 208px;
     display: flex;
@@ -386,6 +388,11 @@ body {
 
 /* MEDIAQUERIES */
 
+@media screen and (max-width: 700px){
+    .footer__list{
+        flex-direction: column;
+    }
+}
 @media screen and (max-width: 768px){
     .text{
         font-size: 18px;
@@ -503,7 +510,9 @@ body {
     .partners__title{
         padding-left: 20px;
     }
-    .partners__inner{
-        padding: 0 20px;
+    .partners__inner,
+    .footer__inner{
+        padding-left: 20px;
+        padding-right: 20px;
     }
 }
